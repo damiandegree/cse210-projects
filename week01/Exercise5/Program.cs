@@ -5,7 +5,11 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
-    
+        string userName = PromptUserName();
+        int userNumber = PromptUserNumber();
+        int userSquare = SquareNumber(userNumber);
+
+        DisplayResult(userName,userSquare);
     }
     static void DisplayWelcome()
     {
@@ -31,6 +35,6 @@ class Program
     }
     static void DisplayResult(string name,int square)
     {
-        Console.WriteLine($"{name}, the square of your number is {square}.")
+        Console.WriteLine($"{name}, the square of your number is {square}.");
     }
 }
